@@ -1,10 +1,11 @@
 import { GlobalStyle } from "./global";
+import Header from "./layout/Header";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      윤혜원의 포트폴리오
+      <Header />
     </>
   );
 }

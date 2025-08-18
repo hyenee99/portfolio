@@ -31,4 +31,15 @@ export const GlobalStyle = createGlobalStyle`
   h1 {
     font-family: 'DNFBitBitv2';
   } 
+
+ body {
+    background: linear-gradient(
+      120deg,
+      #f0e6f6 0%,
+      #ffe4e8 40%,
+     #e4f7ff 100%
+    );
+    width: 100vw;
+    min-height: 100vh;
+  }
 `;
