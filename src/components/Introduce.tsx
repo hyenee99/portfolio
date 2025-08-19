@@ -21,7 +21,17 @@ const IntroduceStyle = styled.div`
 
   img {
     height: 95%;
-    overflow: hidden;
+    width: 30%;
+    object-fit: contain;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 40%;
+    }
   }
 `;
 
@@ -29,4 +39,14 @@ const DescriptionStyle = styled.div`
   white-space: pre-line;
   font-size: 1.2rem;
   width: 60%;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
 `;
