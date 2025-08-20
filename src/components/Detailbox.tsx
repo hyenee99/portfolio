@@ -28,5 +28,7 @@ const ContentStyle = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  white-space: pre-line;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
 `;

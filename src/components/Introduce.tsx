@@ -29,7 +29,7 @@ export default function Introduce() {
     {
       Icon: IoSchool,
       title: "학력",
-      content: "성공회대학교\n(컴퓨터공학, 소프트웨어공학 복수전공)",
+      content: "성공회대학교\n(컴퓨터공학, 소프트웨어공학)",
     },
     {
       Icon: MdEmail,
@@ -117,4 +117,9 @@ const DetailStyle = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 0 5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1rem;
+  }
 `;
