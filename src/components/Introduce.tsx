@@ -73,7 +73,7 @@ const IntroduceStyle = styled.div`
   justify-content: space-around;
 
   img {
-    height: 95%;
+    height: 85%;
     width: 30%;
     object-fit: contain;
   }
@@ -104,12 +104,12 @@ const DescriptionStyle = styled.div`
   }
 `;
 
-const TitleStyle = styled.h1`
+export const TitleStyle = styled.h1`
   width: fit-content;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #e4f7ff;
   -webkit-text-stroke: 0.5px #9c9c9c;
-  margin: 0 auto 2rem;
+  margin: 3rem auto;
 `;
 
 const DetailStyle = styled.div`

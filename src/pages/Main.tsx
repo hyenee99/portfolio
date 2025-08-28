@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import Introduce from "../components/Introduce";
+import Strength from "../components/Strength";
 
 export default function MainPage() {
   return (
     <MainPageStyle>
       <Introduce />
+      <Strength />
     </MainPageStyle>
   );
 }
