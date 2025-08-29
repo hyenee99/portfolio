@@ -19,6 +19,12 @@ export const GlobalStyle = createGlobalStyle`
     font-weight:400;
     src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')
   }
+  @font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+  }
 
   * {
     padding: 0;
@@ -31,6 +37,10 @@ export const GlobalStyle = createGlobalStyle`
   h1 {
     font-family: 'DNFBitBitv2';
   } 
+
+  h2 {
+    font-family: 'Paperozi';
+  }
 
  body {
     background: linear-gradient(
