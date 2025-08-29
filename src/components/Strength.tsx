@@ -33,6 +33,10 @@ const StrengthStyle = styled.div`
   h2 {
     padding: 1rem 0;
   }
+
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const ImgStyle = styled.div`
@@ -51,6 +55,10 @@ const StrengthBox = styled.div`
   white-space: pre-line;
   font-size: 1.2rem;
   gap: 1rem;
+
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const StrengthBox2 = styled.div`
@@ -63,5 +71,17 @@ const StrengthBox2 = styled.div`
   img {
     width: 35%;
     border-radius: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
   }
 `;
