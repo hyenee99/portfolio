@@ -14,7 +14,7 @@ function Skillbox({ title, content }: skillProps) {
   );
 }
 const SkillboxStyle = styled.div`
-  border: 2px solid #e4f7ff;
+  border: 3px solid #edd4ff;
   background-color: rgba(255, 252, 232, 0.8);
   width: 30%;
   height: 13rem;
@@ -26,12 +26,29 @@ const SkillboxStyle = styled.div`
 
   h2 {
     margin: 0 auto;
+    font-size: 1.3rem;
   }
 
   p {
     font-size: 1.1rem;
     font-family: "Paperozi";
     color: #595858;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.7rem;
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+
+    h2 {
+      font-size: 1.3rem;
+    }
   }
 `;
 

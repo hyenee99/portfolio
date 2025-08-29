@@ -44,4 +44,9 @@ const SkillStyle = styled.div`
   padding: 2rem;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
