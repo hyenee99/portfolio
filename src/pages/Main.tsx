@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Introduce from "../components/Introduce";
 import Strength from "../components/Strength";
 import Skill from "../components/Skill";
+import Project from "../components/Project";
 
 export default function MainPage() {
   return (
@@ -9,6 +10,7 @@ export default function MainPage() {
       <Introduce />
       <Strength />
       <Skill />
+      <Project />
     </MainPageStyle>
   );
 }
