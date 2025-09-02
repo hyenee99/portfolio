@@ -29,4 +29,20 @@ const ProjectboxStyle = styled.div`
   p {
     color: #595858;
   }
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
 `;
