@@ -8,7 +8,11 @@ interface projectProps {
 export default function Projectbox({ img, title, description }: projectProps) {
   return (
     <ProjectboxStyle>
-      <img src={img} />
+      <ImgStyle>
+        <img src={img} />
+        <div className="click-text">자세히 보기</div>
+      </ImgStyle>
+
       <h2>{title}</h2>
       <p>{description}</p>
     </ProjectboxStyle>
@@ -44,5 +48,28 @@ const ProjectboxStyle = styled.div`
     h2 {
       font-size: 1.2rem;
     }
+  }
+`;
+
+const ImgStyle = styled.div`
+  position: relative;
+
+  .click-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #595858;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  &:hover img {
+    filter: blur(2px);
+  }
+  &:hover .click-text {
+    opacity: 1;
   }
 `;
