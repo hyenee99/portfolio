@@ -10,11 +10,13 @@ export default function Project() {
       img: albaschoolImg,
       title: "알바스쿨",
       description: "사업자와 아르바이트생을 위한 통합 업무 관리 플랫폼",
+      link: "/albaschool",
     },
     {
       img: desserbeeImg,
       title: "디저비",
       description: "지도 기반 맞춤형 디저트 매장 탐색 및 커뮤니티 통합 플랫폼",
+      link: "/desserbee",
     },
   ];
   return (
@@ -27,6 +29,7 @@ export default function Project() {
             img={item.img}
             title={item.title}
             description={item.description}
+            link={item.link}
           />
         ))}
       </ProjectStyle>

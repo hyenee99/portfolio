@@ -1,14 +1,25 @@
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 interface projectProps {
   img: string;
   title: string;
   description: string;
+  link: string;
 }
-export default function Projectbox({ img, title, description }: projectProps) {
+export default function Projectbox({
+  img,
+  title,
+  description,
+  link,
+}: projectProps) {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate(link);
+  };
   return (
     <ProjectboxStyle>
-      <ImgStyle>
+      <ImgStyle onClick={handleClick}>
         <img src={img} />
         <div className="click-text">자세히 보기</div>
       </ImgStyle>
