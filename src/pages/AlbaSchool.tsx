@@ -14,7 +14,10 @@ export default function AlbaSchool() {
     period: "2025.01 ~ 2025. 02 (약 6주)",
     member: "백엔드 2명, 프론트엔드 3명 (본인 포함)",
     skill: "React, TypeScript, TanStack Query, Zustand, MUI, Styled-components",
+    contribution: `🔹프로젝트 아이디어 제안 및 UI/UX 기획 주도 \n 🔹로그인, 회원가입, 교육 페이지 등 10개 이상의 주요 화면 구현 \n🔹회원가입, 로그인 기능 구현 및 zustand를 활용한 전역 상태(인증, 사용자 정보) 관리\n🔹교육 페이지 CRUD 기능 구현 \n 🔹마이페이지 내 가게 정보 및 직원 관리 기능 구현\n🔹사용자 권한별 라우팅 보호 및 맞춤형 접근 제어 구현
+    🔹TanStack Query를 활용한 REST API 연동으로 서버 상태 관리와 데이터 캐싱을 효율적으로 처리`,
   };
+
   return (
     <AlbaSchoolStyle>
       <h2>알바스쿨</h2>
@@ -23,6 +26,7 @@ export default function AlbaSchool() {
         period={data.period}
         member={data.member}
         skill={data.skill}
+        contribution={data.contribution}
       />
       <h2>트러블 슈팅</h2>
       <ProjectDetailBoxStyle>
@@ -46,6 +50,13 @@ export default function AlbaSchool() {
           heading="결과"
           content="사용자는 자신의 권한 범위 내에서만 기능을 사용할 수 있어, 의도치 않은 잘못된 조작 가능성이 줄어들고 서비스 이용에 혼란이 없어졌습니다."
         />
+        <CommitButtonStyle
+          href="https://github.com/albaschool/frontend/pull/23/commits/55378fa5b81f404284b768e976f452ff25eb9400"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          커밋 확인하기
+        </CommitButtonStyle>
       </ProjectDetailBoxStyle>
 
       <ProjectDetailBoxStyle>
@@ -82,5 +93,23 @@ const AlbaSchoolStyle = styled.div`
 
   h2 {
     padding: 0.5rem;
+  }
+`;
+
+const CommitButtonStyle = styled.a`
+  width: 10%;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  border: 3px solid #edd4ff;
+  background-color: #e4f7ff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: #edd4ff;
+    font-weight: bold;
   }
 `;

@@ -6,12 +6,14 @@ interface props {
   period: string;
   member: string;
   skill: string;
+  contribution: string;
 }
 export default function ProjectDetailBox({
   introduce,
   period,
   member,
   skill,
+  contribution,
 }: props) {
   return (
     <ProjectDetailBoxStyle>
@@ -19,6 +21,7 @@ export default function ProjectDetailBox({
       <DetailSection heading="📆 프로젝트 기간" content={period} />
       <DetailSection heading="👥 팀 구성" content={member} />
       <DetailSection heading="🛠️ 사용 기술" content={skill} />
+      <DetailSection heading="🏅 기여" content={contribution} />
     </ProjectDetailBoxStyle>
   );
 }
