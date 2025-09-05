@@ -9,7 +9,6 @@ import DetailSection from "../components/DetailSection";
 
 export default function AlbaSchool() {
   const data = {
-    title: "알바스쿨",
     introduce: `사업자와 아르바이트생을 위한 통합 업무 관리 플랫폼입니다. 가게 매뉴얼 관리, 근무 스케줄 관리, 메신저 기능을 한 곳에서 제공합니다.`,
     period: "2025.01 ~ 2025. 02 (약 6주)",
     member: "백엔드 2명, 프론트엔드 3명 (본인 포함)",
@@ -103,7 +102,7 @@ const AlbaSchoolStyle = styled.div`
   }
 `;
 
-const CommitButtonStyle = styled.a`
+export const CommitButtonStyle = styled.a`
   width: 15%;
   height: 2.5rem;
   border-radius: 0.5rem;
