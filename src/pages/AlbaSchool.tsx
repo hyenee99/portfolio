@@ -82,6 +82,13 @@ export default function AlbaSchool() {
           <strong>2초 걸리던 업데이트 시간이 0.5초 이내</strong>로
           단축되었습니다.
         </p>
+        <CommitButtonStyle
+          href="https://github.com/albaschool/frontend/commit/ee593d8acc0c34934ff094fbf189cc7cf9beb882"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          커밋 확인하기
+        </CommitButtonStyle>
       </ProjectDetailBoxStyle>
     </AlbaSchoolStyle>
   );
@@ -97,7 +104,7 @@ const AlbaSchoolStyle = styled.div`
 `;
 
 const CommitButtonStyle = styled.a`
-  width: 10%;
+  width: 15%;
   height: 2.5rem;
   border-radius: 0.5rem;
   font-size: 0.9rem;
@@ -111,5 +118,9 @@ const CommitButtonStyle = styled.a`
   &:hover {
     background-color: #edd4ff;
     font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    width: 30%;
   }
 `;

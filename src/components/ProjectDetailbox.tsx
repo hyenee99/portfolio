@@ -36,7 +36,13 @@ export const ProjectDetailBoxStyle = styled.div`
   margin-bottom: 1rem;
 
   img {
-    width: 40%;
+    width: 50%;
     border-radius: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    img {
+      width: 100%;
+    }
   }
 `;
