@@ -3,6 +3,7 @@ import Introduce from "../components/Introduce";
 import Strength from "../components/Strength";
 import Skill from "../components/Skill";
 import Project from "../components/Project";
+import Footer from "../components/Footer";
 
 export default function MainPage() {
   return (
@@ -11,6 +12,7 @@ export default function MainPage() {
       <Strength />
       <Skill />
       <Project />
+      <Footer />
     </MainPageStyle>
   );
 }

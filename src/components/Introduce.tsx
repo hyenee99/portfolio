@@ -39,7 +39,7 @@ export default function Introduce() {
     {
       Icon: FaBloggerB,
       title: "블로그",
-      content: "https://hyenee99.tistory.com/",
+      content: "https://hyenee99.tistory.com",
     },
   ];
 
