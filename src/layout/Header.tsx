@@ -51,7 +51,7 @@ const HeaderStyle = styled.div<{ $scrolled: boolean }>`
   width: 100%;
   height: 3.75rem;
   background-color: ${({ $scrolled }) =>
-    $scrolled ? "rgba(255, 255, 255, 0.5)" : "transparent"};
+    $scrolled ? "rgba(255, 255, 255, 0.8)" : "transparent"};
   transition: background-color 0.3s;
   display: flex;
   justify-content: space-between;

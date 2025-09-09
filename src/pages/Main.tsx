@@ -30,6 +30,6 @@ export default function MainPage() {
   );
 }
 const MainPageStyle = styled.div`
-  height: calc(100vh - 3.75rem);
+  min-height: calc(100vh - 3.75rem);
   margin-top: 3.75rem;
 `;
