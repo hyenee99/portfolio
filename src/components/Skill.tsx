@@ -1,8 +1,11 @@
 import styled from "styled-components";
 import { TitleStyle } from "./Introduce";
 import Skillbox from "./Skillbox";
+type props = {
+  id?: string;
+};
 
-export default function Skill() {
+export default function Skill({ id }: props) {
   const skills = [
     {
       title: "🛠️ 언어 및 프레임워크",
@@ -30,14 +33,14 @@ export default function Skill() {
     },
   ];
   return (
-    <>
+    <div id={id}>
       <TitleStyle>Skills</TitleStyle>
       <SkillStyle>
         {skills.map((item, idx) => (
           <Skillbox key={idx} title={item.title} content={item.content} />
         ))}
       </SkillStyle>
-    </>
+    </div>
   );
 }
 const SkillStyle = styled.div`

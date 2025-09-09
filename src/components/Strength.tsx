@@ -5,10 +5,13 @@ import strengthImg1_2 from "../img/strength1_2.png";
 import strengthImg2 from "../img/strength2.png";
 import Strength1 from "../content/Strength1";
 import Strength2 from "../content/Strength2";
+type props = {
+  id?: string;
+};
 
-export default function Strength() {
+export default function Strength({ id }: props) {
   return (
-    <StrengthStyle>
+    <StrengthStyle id={id}>
       <TitleStyle>Strength</TitleStyle>
       <h2> 강점 1. 원활한 커뮤니케이션 능력</h2>
       <StrengthBox>

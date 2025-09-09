@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export default function Header() {
@@ -23,10 +24,18 @@ export default function Header() {
 
         <nav>
           <ul>
-            <li>About me</li>
-            <li>Strength</li>
-            <li>Skills</li>
-            <li>Projects</li>
+            <li>
+              <Link to="/#about">About me</Link>
+            </li>
+            <li>
+              <Link to="/#strength">Strength</Link>
+            </li>
+            <li>
+              <Link to="/#skill">Skills</Link>
+            </li>
+            <li>
+              <Link to="/#project">Projects</Link>
+            </li>
           </ul>
         </nav>
       </HeaderStyle>

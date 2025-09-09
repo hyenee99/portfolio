@@ -10,8 +10,8 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/albaschool" element={<AlbaSchool />} />
-          <Route path="/desserbee" element={<Desserbee />} />
+          <Route path="/projects/albaschool" element={<AlbaSchool />} />
+          <Route path="/projects/desserbee" element={<Desserbee />} />
         </Routes>
       </Layout>
     </BrowserRouter>

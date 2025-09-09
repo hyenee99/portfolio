@@ -9,7 +9,10 @@ import { MdEmail } from "react-icons/md";
 import { FaBloggerB } from "react-icons/fa";
 import DetailBox from "./Detailbox";
 
-export default function Introduce() {
+type props = {
+  id?: string;
+};
+export default function Introduce({ id }: props) {
   const details = [
     {
       Icon: IoPersonSharp,
@@ -44,7 +47,7 @@ export default function Introduce() {
   ];
 
   return (
-    <>
+    <div id={id}>
       <IntroduceStyle>
         <img src={profileImg} alt="profile" />
         <DescriptionStyle>
@@ -62,7 +65,7 @@ export default function Introduce() {
           />
         ))}
       </DetailStyle>
-    </>
+    </div>
   );
 }
 

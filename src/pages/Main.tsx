@@ -4,14 +4,27 @@ import Strength from "../components/Strength";
 import Skill from "../components/Skill";
 import Project from "../components/Project";
 import Footer from "../components/Footer";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function MainPage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.replace("#", ""));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location.hash]);
+
   return (
     <MainPageStyle>
-      <Introduce />
-      <Strength />
-      <Skill />
-      <Project />
+      <Introduce id="about" />
+      <Strength id="strength" />
+      <Skill id="skill" />
+      <Project id="project" />
       <Footer />
     </MainPageStyle>
   );
